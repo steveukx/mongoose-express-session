@@ -1,0 +1,17 @@
+{
+  "name": "mongoose-store",
+  "description": "Mongoose/mongo backed session store for connect and express",
+  "version": "0.0.0",
+  "main": "./lib/MongooseStore",
+  "author": "Steve King <steve@mydev.co>",
+  "contributors": [
+    {
+      "name": "Steve King",
+      "email": "steve@mydev.co"
+    }
+  ],
+  "repository": "git://github.com/steveukx/mongoose-express-session.git",
+  "dependencies": {
+    "mongoose": "^3.6.20"
+  }
+}
