@@ -1,5 +1,5 @@
 {
-  "name": "mongoose-store",
+  "name": "mongoose-express-session",
   "description": "Mongoose/mongo backed session store for connect and express",
   "version": "0.0.0",
   "main": "./lib/MongooseStore",
