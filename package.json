@@ -12,6 +12,5 @@
   ],
   "repository": "git://github.com/steveukx/mongoose-express-session.git",
   "dependencies": {
-    "mongoose": "^3.6.20"
   }
 }
