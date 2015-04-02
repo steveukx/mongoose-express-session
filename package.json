@@ -1,7 +1,7 @@
 {
   "name": "mongoose-express-session",
   "description": "Mongoose/mongo backed session store for connect and express",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./lib/MongooseStore",
   "author": "Steve King <steve@mydev.co>",
   "contributors": [

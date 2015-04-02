@@ -47,6 +47,16 @@ The `configuration` properties require one of:
 When just supplying mongoose, the default connection string `mongodb://localhost/connect-sessions` will be used,
 allowing for connecting the session model without impacting the application database.
 
+* `store` instead of passing the Store constructor up-front, it can also be passed into the configuration
+
+````
+    var MongooseStore = require('mongoose-express-session')();
+    var mongooseStore = new MongooseStore({
+        mongoose: mongoose,
+        store: require('express-session').Store
+    });
+````
+
 # Project Status
 
 Currently a work in progress and not production-ready.
