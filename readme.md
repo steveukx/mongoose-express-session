@@ -64,7 +64,7 @@ allowing for connecting the session model without impacting the application data
     });
 ````
 
-These are optional property of `configuration`
+These are optional properties of `configuration`
 
  - `sessionLifespan` as an expiry of session on the store
 
