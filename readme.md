@@ -56,6 +56,16 @@ allowing for connecting the session model without impacting the application data
         store: require('express-session').Store
     });
 ````
+These are optional properties of `configuration`
+
+ - `sessionLifespan` as an expiry of session on the store
+
+If it doesn't given as a configuration, the default number `60 * 20` will be used.
+
+ - `modelName` as an name of model where Session will be stored. 
+
+If it doesn't given as a configuration, the default string `Session` will be used.
+
 
 # Project Status
 
