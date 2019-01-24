@@ -6,8 +6,11 @@ A simple [http://www.senchalabs.org/connect/session.html#exports.Store](Store) i
 
 # Usage
 
+    var mongoose = require('mongoose');
     var Store = require('express-session').Store;
     var MongooseStore = require('mongoose-express-session')(Store);
+    
+    var thirtyDaysToSecs = 2592000
     
     app.use(require('express-session')({
         secret: 'keyboard cat',
@@ -16,6 +19,10 @@ A simple [http://www.senchalabs.org/connect/session.html#exports.Store](Store) i
         saveUninitialized: true,
         store: new MongooseStore({
             /* configuration */
+            connection: 'mongodb://localhost/connect-sessions',
+		    mongoose: mongoose,
+		    sessionLifespan: thirtyDaysToSecs,
+		    modelName: 'Session'
         })
     }));
 
@@ -56,6 +63,16 @@ allowing for connecting the session model without impacting the application data
         store: require('express-session').Store
     });
 ````
+
+These are optional properties of `configuration`
+
+ - `sessionLifespan` as an expiry of session on the store
+
+If it doesn't given as a configuration, the default number `60 * 20` will be used.
+
+ - `modelName` as an name of model where Session will be stored. 
+
+If it doesn't given as a configuration, the default string `Session` will be used.
 
 # Project Status
 

@@ -1,16 +1,20 @@
 {
-  "name": "mongoose-express-session",
+  "name": "mongoose-express-session-beta",
   "description": "Mongoose/mongo backed session store for connect and express",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "./lib/MongooseStore",
-  "author": "Steve King <steve@mydev.co>",
+  "author": "JungHoonPark",
   "contributors": [
     {
       "name": "Steve King",
       "email": "steve@mydev.co"
+    },
+    {
+      "name": "JungHoonPark",
+      "email": "junghooncentralpark@gmail.com"
     }
   ],
-  "repository": "git://github.com/steveukx/mongoose-express-session.git",
+  "repository": "git://github.com/qkreltms/mongoose-express-session",
   "dependencies": {
   }
 }
